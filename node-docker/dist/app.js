@@ -6,6 +6,7 @@ const app = express();
 app.set("port", process.env.PORT || 3000);
 // API Endpoints
 app.get('/', (request, response) => response.send("hello World, how's it going"));
+app.get('/hello', (request, response) => response.send("hello!"));
 // export our app
 exports.default = app;
 //# sourceMappingURL=app.js.map

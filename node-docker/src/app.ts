@@ -9,5 +9,9 @@ app.get('/', (request: any, response: any) =>
   response.send("hello World, how's it going")
 )
 
+app.get('/hello', (request: any, response: any) => 
+  response.send("hello!")
+)
+
 // export our app
 export default app;

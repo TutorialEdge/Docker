@@ -1,6 +1,7 @@
 FROM java:8
-COPY Server.java /
+WORKDIR /app
+COPY . /app/
 RUN javac Server.java
 EXPOSE 8080
 ENTRYPOINT ["java"]
-CMD ["server"]
+CMD ["Server"]
